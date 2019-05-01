@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "example-extension"
+		},
+		{
+			"path": "helper-extension"
+		},
+		{
+			"path": "remote-example-api"
+		},
+        {
+            "name": "Root Folder (w/README)",
+            "path": "."
+        }
+	]
+}

@@ -1,0 +1,23 @@
+{
+    "name": "remote-example-api",
+    "displayName": "Remote Example API",
+    "description": "A Workspace Extension client library for interacting with remote instances of Example API",
+    "repository": "https://github.com/Microsoft/vscode-dev-containers",
+    "version": "0.0.1",
+    "scripts": {
+        "compile": "./node_modules/.bin/tsc -p ./",
+        "watch": "./node_modules/.bin/tsc -watch -p ./",
+        "prepack": "yarn run compile"
+    },
+    "main": "./out/remote-example-api.js",
+    "types": "./remote-example-api.d.ts",
+    "devDependencies": {
+        "@types/node": "^10.12.21",
+        "@types/uuid": "^3.4.4",
+        "tslint": "^5.12.1",
+        "typescript": "^3.3.1"
+    },
+    "dependencies": {
+        "uuid": "^3.3.2"
+    }
+}

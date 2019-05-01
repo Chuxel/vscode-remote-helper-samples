@@ -1,0 +1,4 @@
+{
+    "name": "Remote API w/Events Extension Sample",
+    "dockerFile": "Dockerfile"
+}

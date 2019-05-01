@@ -1,0 +1,33 @@
+{
+	"name": "helper-extension",
+	"publisher": "vscode",
+	"displayName": "Helper Extension",
+	"description": "Helper extension that implements the echo command used by main extension.",
+	"repository": "https://github.com/Microsoft/vscode-dev-containers",
+	"version": "0.0.1",
+	"extensionKind": "ui",
+	"api": "none",
+	"engines": {
+		"vscode": "^1.31.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:_helper-extension.echo"
+	],
+	"main": "./out/extension.js",
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+        "compile": "./node_modules/.bin/tsc -p ./",
+        "watch": "./node_modules/.bin/tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"tslint": "^5.12.1",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	}
+}

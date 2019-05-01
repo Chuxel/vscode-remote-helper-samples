@@ -1,0 +1,37 @@
+{
+	"name": "api-helper",
+	"publisher": "vscode",
+	"displayName": "Remote API Helper Extension",
+	"description": "A helper extension that enables the use of an example API on the UI side from a Workspace extension.",
+	"repository": "https://github.com/Microsoft/vscode-dev-containers",
+	"version": "0.0.1",
+	"extensionKind": "ui",
+	"api": "none",
+	"engines": {
+		"vscode": "^1.31.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:_remote-api.call"
+	],
+	"main": "./out/extension.js",
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "./node_modules/.bin/tsc -p ./",
+		"watch": "./node_modules/.bin/tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"devDependencies": {
+		"@types/mocha": "^2.2.42",
+		"@types/node": "^10.12.21",
+		"@types/uuid": "^3.4.4",
+		"tslint": "^5.12.1",
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28"
+	},
+	"dependencies": {
+		"uuid": "^3.3.2"
+	}
+}
