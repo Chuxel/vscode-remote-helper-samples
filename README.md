@@ -17,7 +17,7 @@ When developing remotely, VS Code will attempt to infer where to install an exte
 
 * UI Extensions are installed locally. These extensions only customize the UI and do not access files in a workspace, which means they can run entirely on the local machine. Since they are installed locally, they are always available to you independent of the workspace you are working in. Examples of UI extensions are themes, snippets, language grammars, and keymaps.
 
-* Workspace Extensions are installed remotely. They access files and folders in a workspace for editing, to provide IntelliSense (completions), GoTo Definition, debugging, and more. These extensions may customize the UI. These extensions run remotely so that they have full access to the file system and tools on the remote host.
+* Workspace Extensions are installed remotely. They access files and folders in a workspace for editing, to provide IntelliSense (completions), go-to-definition, debugging, and more. These extensions run remotely so that they have full access to the file system and tools on the remote host. While Workspace extensions do not focus on UI customization, they can contribute explorers, views, and other UI elements as well.
 
 ![Architecture](.readme/architecture.png)
 
