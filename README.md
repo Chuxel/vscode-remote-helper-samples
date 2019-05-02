@@ -113,7 +113,7 @@ In some cases, you may have an existing node module that is used in many places 
 
 ![ApiBridge Architecture](.readme/api-bridge.png)
 
-For example, imagine the [simple echo command above](#accessing-local-apis-using-a-helper-extension) was part of common node module.
+For example, imagine the [simple echo command above](#basic-helper-extension) was part of common node module.
 
 example-api.ts:
 
