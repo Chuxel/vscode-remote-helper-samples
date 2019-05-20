@@ -13,6 +13,8 @@
 
 While many extensions will work with VS Code Remote Development unmodified, some extensions will need to be changed to function as expected. The [VS Code Remote Development Extension Guide](https://aka.ms/vscode-remote/developing-extensions) covers general guidance and information on using existing APIs. This repository focuses on providing samples for how to get around a few very specific challenges.
 
+> **Note:** These are not offical samples as the VS Code team is still investigating alternate approaches to accomplish what is described here.
+
 When developing remotely, VS Code will attempt to infer where to install an extension, locally or remotely, based on the functionality it exposes. Extensions fall into one of two categories:
 
 * UI Extensions are installed locally. These extensions only customize the UI and do not access files in a workspace, which means they can run entirely on the local machine. Since they are installed locally, they are always available to you independent of the workspace you are working in. Examples of UI extensions are themes, snippets, language grammars, and keymaps.
