@@ -7,7 +7,7 @@ See the [VS Code Remote Extension Guide](https://aka.ms/vscode-remote/developing
 ## Contents
 
 - `helper-extension` - UI Helper Extension that exposes an "echo" command.
-- `main-extension` - Main Workspace Extension that uses the "echo" command.
+- `example-extension` - Main Workspace Extension that uses the "echo" command.
 
 ## Running the example
 
@@ -34,10 +34,10 @@ See the [VS Code Remote Extension Guide](https://aka.ms/vscode-remote/developing
 1. Check out what happens when running in a container:
     1. Start VS Code and use the **Remote-Containers: Open Folder in Container...** command and select this folder.
     2. Once the you are connected to the container, use **File > Open Workspace...** to open the `*.code-workspace` file (from inside the container).
-    3. Start debugging the `main-extension` using the **Run Main Extension** launch configuration (F5).
+    3. Start debugging the `example-extension` using the **Run Example Extension** launch configuration (F5).
     4. Ctrl/Cmd+Shift+P and run the **Main Extension: Echo** command
 
 2. Stop debugging and check out the local scenario to illustrate backwards compatibility:
     1. **File > Open Workspace...**, but this time open the `*.code-workspace` file in this folder LOCALLY.
-    2. Start debugging the `main-extension` using the **Run Main Extension** launch configuration (F5).
+    2. Start debugging the `example-extension` using the **Run Example Extension** launch configuration (F5).
     3. Ctrl/Cmd+Shift+P and run the **Main Extension: Echo** command

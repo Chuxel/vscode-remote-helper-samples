@@ -1,10 +1,10 @@
 {
 	"folders": [
 		{
-			"path": "helper-extension"
+			"path": "example-extension"
 		},
 		{
-			"path": "main-extension"
+			"path": "helper-extension"
 		},
         {
             "name": "Root Folder (w/README)",

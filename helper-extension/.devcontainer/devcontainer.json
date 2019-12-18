@@ -1,4 +1,7 @@
 {
     "name": "Helper Extension Sample",
-    "dockerFile": "Dockerfile"
+    "dockerFile": "Dockerfile",
+    "extensions": [
+        "ms-vscode.vscode-typescript-tslint-plugin"
+    ]
 }
