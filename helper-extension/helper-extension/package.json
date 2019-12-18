@@ -5,7 +5,7 @@
 	"description": "Helper extension that implements the echo command used by main extension.",
 	"repository": "https://github.com/Microsoft/vscode-dev-containers",
 	"version": "0.0.1",
-	"extensionKind": "ui",
+	"extensionKind": [ "ui" ],
 	"api": "none",
 	"engines": {
 		"vscode": "^1.31.0"

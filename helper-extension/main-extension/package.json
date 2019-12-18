@@ -4,7 +4,7 @@
 	"displayName": "Main Extension",
 	"description": "Main extension that uses helper to echo a message.",
 	"version": "0.0.1",
-	"extensionKind": "workspace",
+	"extensionKind": [ "workspace" ],
 	"engines": {
 		"vscode": "^1.31.0"
 	},

@@ -50,12 +50,18 @@ package.json (Helper Extension):
 ```json
 {
     "name": "helper-extension",
-    "extensionKind": "ui",
+    "extensionKind": [ "ui" ],
     "api":"none",
     "activationEvents": [
         "onCommand:_helper-extension.echo"
     ]
 }
+```
+
+However, this will prevent the helper extension from running in VS Online's browser-based editor. If you still need it to run in this environment, you can update `extensionKind` to "prefer" to run as a UI extension and fall back to a Workspace extension if this is not an option:
+
+```json
+"extensionKind": [ "ui", "workspace" ]
 ```
 
 Setting `"api": "none"` tells VS Code that it can safely ignore any synchronous APIs returned as a part of the extension's activation function, since all cross-extension communication with it will be done using commands.
@@ -85,7 +91,7 @@ package.json (Main Workspace Extension):
 ```json
 {
     "name": "main-extension",
-    "extensionKind": "workspace",
+    "extensionKind": [ "workspace" ],
     "extensionDependencies": [
        "helper-extension"
     ]

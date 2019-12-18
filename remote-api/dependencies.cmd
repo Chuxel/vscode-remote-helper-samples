@@ -14,7 +14,7 @@ echo (*) Compiling and installing Helper Extension
 cd ..\helper-extension
 CALL yarn install
 CALL vsce package 
-CALL code-insiders --install-extension api-helper-0.0.1.vsix
+CALL code --install-extension api-helper-0.0.1.vsix
 
 echo (*) Installing Example Extension dependencies
 cd ..\example-extension
